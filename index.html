@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>建模作品库</title>
+    <!-- 引入外部样式库 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- 引入自定义样式 -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">
+                <i class="fas fa-gamepad"></i>
+                <span>建模作品库</span>
+            </h1>
+            <nav class="nav">
+                <a href="#home" class="nav-link active">首页</a>
+                <a href="#works" class="nav-link">作品展示</a>
+                <a href="#about" class="nav-link">关于我</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 首页横幅 -->
+    <section id="home" class="hero">
+        <div class="container hero-content">
+            <h2>建模师KRINS</h2>
+            <p>专注于游戏影视角色、道具建模创作</p>
+            <a href="#works" class="btn">查看作品</a>
+        </div>
+    </section>
+
+    <!-- 作品展示区 -->
+    <section id="works" class="works">
+        <div class="container">
+            <h2 class="section-title">作品展示</h2>
+            <!-- 作品分类筛选 -->
+            <div class="filter-bar">
+                <button class="filter-btn active" data-filter="all">全部</button>
+                <button class="filter-btn" data-filter="character">角色</button>
+                <button class="filter-btn" data-filter="scene">场景</button>
+                <button class="filter-btn" data-filter="prop">道具</button>
+            </div>
+            <!-- 作品网格 -->
+            <div class="works-grid" id="worksGrid">
+                <!-- 作品卡片将由JavaScript动态生成 -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 作品详情模态框 -->
+    <div class="modal" id="workModal">
+        <div class="modal-content">
+            <span class="close-modal" id="closeModal">&times;</span>
+            <div class="modal-body" id="modalBody">
+                <!-- 作品详情内容将由JavaScript动态生成 -->
+            </div>
+        </div>
+    </div>
+
+    <!-- 视频播放模态框 -->
+    <div class="video-modal" id="videoModal">
+        <div class="video-container">
+            <video id="videoPlayer" controls></video>
+            <span class="close-video" id="closeVideo">&times;</span>
+        </div>
+    </div>
+
+    <!-- 图片查看模态框 -->
+    <div class="image-modal" id="imageModal">
+        <div class="image-container">
+            <img id="imageViewer" src="" alt="展示图片">
+            <span class="close-image" id="closeImage">&times;</span>
+        </div>
+    </div>
+
+    <!-- 关于我 -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">关于我</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>游戏建模师Krins</h3>
+                    <p>专注于游戏行业多年，擅长角色建模、道具设计。热爱游戏艺术，追求高品质的视觉效果。</p>
+                    <p>使用软件：Maya、Max、Ps、Blender、ZBrush、Substance Painter、虚幻引擎5、八猴、</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-artstation"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-behance"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 游戏建模作品集. 保留所有权利.</p>
+        </div>
+    </footer>
+
+    <!-- 引入JavaScript文件 -->
+    <script src="js/projects.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
