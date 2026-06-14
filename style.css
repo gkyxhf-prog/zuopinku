@@ -666,4 +666,33 @@ body {
         padding: 8px 18px;
         font-size: 14px;
     }
+    
+    .hero-content h2 {
+        font-size: 28px;
+    }
+    
+    .hero-content p {
+        font-size: 14px;
+    }
+    
+    .btn {
+        padding: 12px 30px;
+        font-size: 16px;
+    }
+    
+    .section-title {
+        font-size: 28px;
+    }
+    
+    .work-title {
+        font-size: 18px;
+    }
+    
+    .work-meta {
+        font-size: 12px;
+    }
+    
+    .modal-description {
+        font-size: 14px;
+    }
 }
