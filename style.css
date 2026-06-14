@@ -615,6 +615,12 @@ body {
 
 /* 响应式设计 */
 @media (max-width: 768px) {
+    .hero {
+        background: linear-gradient(135deg, rgba(26, 26, 46, 0.7) 0%, rgba(22, 33, 62, 0.7) 50%, rgba(15, 52, 96, 0.7) 100%),
+                    url('images/hero-bg-mobile.jpg') center center no-repeat;
+        background-size: cover;
+    }
+    
     .hero-content h2 {
         font-size: 32px;
     }
