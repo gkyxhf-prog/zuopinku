@@ -543,6 +543,35 @@ body {
     margin-bottom: 15px;
 }
 
+.contact-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 15px;
+}
+
+.contact-info {
+    text-align: left;
+}
+
+.contact-info p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+.contact-info i {
+    color: #00d4ff;
+    width: 20px;
+}
+
 .social-links {
     display: flex;
     justify-content: center;
@@ -700,5 +729,14 @@ body {
     
     .modal-description {
         font-size: 14px;
+    }
+    
+    .contact-section {
+        padding: 15px;
+    }
+    
+    .contact-info p {
+        font-size: 14px;
+        justify-content: center;
     }
 }
