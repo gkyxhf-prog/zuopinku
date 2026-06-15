@@ -309,21 +309,26 @@ function bindSmoothScroll() {
     
     navLinks.forEach(link => {
         link.addEventListener('click', function(e) {
-            e.preventDefault();
             const targetId = this.getAttribute('href');
-            const targetElement = document.querySelector(targetId);
             
-            if (targetElement) {
-                // 移除所有导航链接的active类
-                navLinks.forEach(l => l.classList.remove('active'));
-                // 添加当前链接的active类
-                this.classList.add('active');
+            // 只有内部锚点链接（以#开头）才阻止默认行为并平滑滚动
+            if (targetId.startsWith('#')) {
+                e.preventDefault();
+                const targetElement = document.querySelector(targetId);
                 
-                // 平滑滚动到目标位置
-                targetElement.scrollIntoView({
-                    behavior: 'smooth'
-                });
+                if (targetElement) {
+                    // 移除所有导航链接的active类
+                    navLinks.forEach(l => l.classList.remove('active'));
+                    // 添加当前链接的active类
+                    this.classList.add('active');
+                    
+                    // 平滑滚动到目标位置
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
             }
+            // 外部链接（如market.html）则正常跳转，不阻止默认行为
         });
     });
 }
