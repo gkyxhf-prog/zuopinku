@@ -39,11 +39,6 @@ const projects = [
         cover: 'images/character02/cover.jpg',
         images: [
             'images/character02/view01.jpg',
-            'images/character02/view02.jpg',
-            'images/character02/view03.jpg',
-            'images/character02/view04.jpg',
-            'images/character02/view05.jpg',
-            'images/character02/view06.jpg',
             'images/character02/view07.jpg',
         ],
         // 视频列表（可选，此作品没有视频则为空数组）
@@ -58,12 +53,7 @@ const projects = [
         category: 'character',
         cover: 'images/character03/cover.jpg',
         images: [
-            'images/character03/view01.jpg',
-            'images/character03/view02.jpg',
-            'images/character03/view03.jpg',
-            'images/character03/view04.jpg',
-            'images/character03/view05.jpg',
-            'images/character03/view06.jpg'
+           
         ],
         // 视频列表（可选，此作品没有视频则为空数组）
         videos: [],
@@ -77,8 +67,7 @@ const projects = [
         category: 'prop',
         cover: 'images/prop01/cover.jpg',
         images: [
-            'images/prop01/view01.jpg',
-            'images/prop01/view02.jpg',
+            
         ],
         // 视频列表（可选，此作品没有视频则为空数组）
         videos: [],
@@ -93,7 +82,7 @@ const projects = [
         category: 'prop',
         cover: 'images/prop02/cover.jpg',
         images: [
-            'images/prop02/view01.jpg',
+            
             
         ],
         // 视频列表（可选，此作品没有视频则为空数组）
